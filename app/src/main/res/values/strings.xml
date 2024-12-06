@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Duck World</string>
+    <string name="title_activity_prefs">Settings</string>
+    <string name="endgame_title">Congratulations!</string>
+    <string name="endgame_message">You have successfully cleared the sector of the duck invasion! The federation is in need of a captain for a similar mission. Do you want to volunteer?</string>
+    <string name="play_again">Yes, play again.</string>
+    <string name="quit">No, I quit.</string>
+    <string name="speed_pref_title">Speed</string>
+    <string name="speed_pref_sum">How fast do the ducks dance?</string>
+    <string name="aloha">Aloha CS300</string>
+    <string name="music_pref_title">Music</string>
+    <string name="music_on">Background music will play</string>
+    <string name="music_off">Background music will NOT play</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>
