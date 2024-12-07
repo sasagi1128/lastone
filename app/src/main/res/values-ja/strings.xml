@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">スライド 300</string>
+    <string name="title_activity_prefs">設定</string>
+    <string name="endgame_title">"ゲームオーバー！"</string>
+    <string name="endgame_message">アヒルの侵略セクターを無事クリアしました！連邦は同様のミッションのためのキャプテンを必要としています。志願しますか？</string>
+    <string name="play_again">もう一度遊ぶ</string>
+    <string name="quit">終了</string>
+    <string name="speed_pref_title">スピード</string>
+    <string name="speed_pref_sum">フルーツはどれくらいの速さで動きますか？</string>
+    <string name="aloha">Aloha CS300</string>
+    <string name="music_pref_title">音楽</string>
+    <string name="music_on">バックグラウンド音楽を再生する</string>
+    <string name="music_off">バックグラウンド音楽は再生しない</string>
+    <string name="p_win">パイナップルの勝利！</string>
+    <string name="b_win">バナナの勝利！</string>
+    <string name="tie">引き分けです！</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">メッセージ</string>
+    <string name="sync_header">同期</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">あなたの署名</string>
+    <string name="reply_title">デフォルトの返信アクション</string>
+    <string name="set_message">"このゲームはブリガムヤング大学ハワイ校のCS 300の学生たちによって作成されました。オリジナルのスライドゲームは、アーカンソー州立大学のロバート・ロッサ博士によって作成され、1984年8月のRUNマガジンに掲載されました。"</string>
+    <string name="set_title">アロハ！</string>
+    <string name="set_neutral_button">OK</string>
+    <string name="make_text">ボタンをタッチしてください</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">メールを定期的に同期する</string>
+    <string name="attachment_title">受信添付ファイルをダウンロード</string>
+    <string name="attachment_summary_on">受信メールの添付ファイルを自動的にダウンロードする</string>
+    <string name="attachment_summary_off">添付ファイルを手動で要求した場合のみダウンロードする</string>
+</resources>
