@@ -1,5 +1,6 @@
 package edu.byuh.cis.cs300.slidefall2024;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -19,7 +20,7 @@ public class GuiToken implements TickListener {
     private GridPosition gp;
     private static int movers = 0;
     private int stepCounter;
-    private final int STEPS = 11;
+    private int STEPS = 11;
     private boolean falling;
 
     public class GridPosition {
@@ -33,7 +34,7 @@ public class GuiToken implements TickListener {
      * @param parent which button was tapped to create the token
      * @param res the Resources object (used for loading image)
      */
-    public GuiToken(Player p, GuiButton parent, Resources res) {
+    public GuiToken(Player p, GuiButton parent, Resources res, Context c) {
         gp = new GridPosition();
         if (parent.isTopButton()) {
             gp.row = 'A' - 1;
@@ -53,6 +54,9 @@ public class GuiToken implements TickListener {
             image = BitmapFactory.decodeResource(res, R.drawable.player_o);
         }
         image = Bitmap.createScaledBitmap(image, (int)bounds.width(), (int)bounds.height(), true);
+
+        int speed = Prefs.getSpeedPref(c);
+        STEPS = speed;
     }
 
     /**

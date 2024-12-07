@@ -193,7 +193,7 @@ public class GameView extends AppCompatImageView implements TickListener {
                     }
                 }
                 if (missed) {
-                    Toast t = Toast.makeText(getContext(), "Please touch a button", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getContext(), getContext().getString(R.string.make_text), Toast.LENGTH_SHORT);
                     t.show();
                 }
             }
@@ -264,18 +264,18 @@ public class GameView extends AppCompatImageView implements TickListener {
                 tim.pause();
                 String message;
                 if (winner == Player.X) {
-                    message = "Pineapple wins!";
+                    message = getContext().getString(R.string.p_win);
                 } else if (winner == Player.O) {
-                    message = "Banana wins!";
+                    message = getContext().getString(R.string.b_win);
                 } else {
-                    message = "It's a tie!";
+                    message = getContext().getString(R.string.tie);
                 }
                 AlertDialog.Builder ab = new AlertDialog.Builder(getContext());
                 ab.setMessage(message)
-                        .setTitle("GAME OVER!")
+                        .setTitle(R.string.endgame_title)
                         .setCancelable(false)
-                        .setPositiveButton("Play again", (d,i) -> reset())
-                        .setNegativeButton("Quit", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(R.string.play_again, (d,i) -> reset())
+                        .setNegativeButton(R.string.quit, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface d, int i) {
                                 ((Activity)getContext()).finish();
@@ -297,7 +297,7 @@ public class GameView extends AppCompatImageView implements TickListener {
     }
 
     private void handleButtonPress(GuiButton b) {
-        var tok = new GuiToken(engine.getCurrentPlayer(), b, getResources());
+        var tok = new GuiToken(engine.getCurrentPlayer(), b, getResources(), getContext() );
         engine.submitMove(b.getLabel());
         tokens.add(tok);
         tim.register(tok);

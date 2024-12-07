@@ -39,9 +39,9 @@ public class SplashActivity extends Activity {
             }
             else if (helpButton.contains(x, y)) {
                 AlertDialog.Builder ab = new AlertDialog.Builder(this);
-                ab.setTitle("Aloha!");
-                ab.setNeutralButton("OK", null);
-                ab.setMessage("This game was created by the students of CS 300 at Brigham Young University–Hawaii. The original Slide game was created by Dr. Robert Rossa from Arkansas State University, and published in the August 1984 issue of RUN magazine.");
+                ab.setTitle(R.string.set_title);
+                ab.setNeutralButton(R.string.set_neutral_button, null);
+                ab.setMessage(R.string.set_message);
                 ab.show();
             }else {
                 //TODO open the "settings"

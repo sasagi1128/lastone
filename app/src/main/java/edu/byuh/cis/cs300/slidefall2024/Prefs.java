@@ -63,7 +63,7 @@ public class Prefs extends AppCompatActivity {
 
             //TODO add preference widgets here
             SwitchPreference music = new SwitchPreference(context);
-            music.setTitle("Music");
+            music.setTitle(getString(R.string.music_pref_title));
             music.setSummaryOn(R.string.music_on);
             music.setSummaryOff(R.string.music_off);
             music.setDefaultValue(false);
@@ -75,7 +75,7 @@ public class Prefs extends AppCompatActivity {
             speedPref.setSummary(R.string.speed_pref_sum);
             speedPref.setKey("SPEED_PREF");
             //String[] entries = {"Fast", "Medium", "Slow"};
-            String[] values = {"20", "10", "4"};
+            String[] values = {"4", "10", "20"};
             speedPref.setEntries(R.array.speed_entries);
             speedPref.setEntryValues(values);
             speedPref.setDefaultValue("10");

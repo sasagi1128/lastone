@@ -1,16 +1,22 @@
 <resources>
-    <string name="app_name">Duck World</string>
+    <string name="app_name">Slide 300</string>
     <string name="title_activity_prefs">Settings</string>
-    <string name="endgame_title">Congratulations!</string>
+    <string name="endgame_title">"GAME OVER!"</string>
     <string name="endgame_message">You have successfully cleared the sector of the duck invasion! The federation is in need of a captain for a similar mission. Do you want to volunteer?</string>
-    <string name="play_again">Yes, play again.</string>
-    <string name="quit">No, I quit.</string>
+    <string name="play_again">play again</string>
+    <string name="quit">Quit</string>
     <string name="speed_pref_title">Speed</string>
-    <string name="speed_pref_sum">How fast do the ducks dance?</string>
+    <string name="speed_pref_sum">How fast do the fruit move?</string>
     <string name="aloha">Aloha CS300</string>
     <string name="music_pref_title">Music</string>
     <string name="music_on">Background music will play</string>
     <string name="music_off">Background music will NOT play</string>
+    <string name="p_win">Pineapple wins!</string>
+    <string name="b_win">Banana wins!</string>
+    <string name="tie">It is a tie!</string>
+
+
+
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -19,6 +25,11 @@
     <!-- Messages Preferences -->
     <string name="signature_title">Your signature</string>
     <string name="reply_title">Default reply action</string>
+    <string name="set_message">"This game was created by the students of CS 300 at Brigham Young University–Hawaii. The original Slide game was created by Dr. Robert Rossa from Arkansas State University, and published in the August 1984 issue of RUN magazine."</string>
+    <string name="set_title">Aloha!</string>
+    <string name="set_neutral_button">OK</string>
+    <string name="make_text">Please touch a button</string>
+
 
     <!-- Sync Preferences -->
     <string name="sync_title">Sync email periodically</string>
